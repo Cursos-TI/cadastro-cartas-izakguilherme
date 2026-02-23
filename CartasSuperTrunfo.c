@@ -11,7 +11,7 @@ int main() {
 
     char Estado1;
     char Código1[3];
-    char Cidade1[30];
+    char Cidade1[50];
     int População1;
     float Area1;
     float PIB1;
@@ -21,7 +21,7 @@ int main() {
 
     char Estado2;
     char Código2[3];
-    char Cidade2[30];
+    char Cidade2[50];
     int População2;
     float Area2;
     float PIB2;
@@ -36,13 +36,34 @@ int main() {
     printf("Estado (A a H):\n");
     scanf("%c", &Estado1);
 
-    printf("Códico (Exp. A01):\n");
+    printf("Códico da carta (Exp. A01):\n");
     scanf("%s", &Código1);
+
+   printf("Nome da Cidade (sem espaço):\n");
+   scanf("%s", &Cidade1);
+   
+   printf("População:\n");
+   scanf("%d", &População1),
+
+   printf("Area (em km2):\n");
+   scanf("%f", &Area1);
+
+   printf("PIB (em milhões de reais):\n");
+   scanf("%f", &PIB1);
+
+   printf("Numero de Pontos Turisticos:\n");
+   scanf("%d", &Pontos1);
 
   // Área para exibição dos dados da cidade
 
-   printf("Estado:%c\n", Estado1);
-    printf("Código:%s\n", Código1);
+   printf("Carta 1\n");
+   printf("Estado: %c\n", Estado1);
+   printf("Código da Carta: %s\n", Código1);
+   printf("Nome da Cidade: %s\n", Cidade1);
+   printf("Populaçãp: %d\n", População1);
+   printf("Area em (km2): %f\n", Area1);
+   printf("PIB: %f\n", PIB1);
+   printf("Numero de Pontos Turisticos: %d\n", Pontos1);
 
 return 0;
 } 
